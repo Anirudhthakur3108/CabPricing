@@ -48,4 +48,4 @@ input_scaled = scaler.transform(input_data)
 # Predict
 if st.button("Predict Fare"):
     prediction = model.predict(input_scaled)
-    st.success(f"💰 Estimated Fare: ${prediction[0]:.2f}")
+    st.success(f"💰 Estimated Fare: ₹{prediction[0]:.2f}")
